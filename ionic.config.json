@@ -1,0 +1,10 @@
+{
+  "name": "PU WiFi",
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/cgi-bin/login",
+      "proxyUrl": "https://securelogin.pu.ac.in/cgi-bin/login"
+    }
+  ]
+}

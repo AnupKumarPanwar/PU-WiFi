@@ -1,0 +1,94 @@
+/* Empty. Add your own CSS if you like */
+.numberCircle {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  line-height: 75px;
+  text-align: center;
+  background: #e74a43;
+  float: left;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+
+.activeUser {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  line-height: 75px;
+  text-align: center;
+  background: green;
+  text-transform: uppercase;
+}
+
+
+.padding
+    {
+        -webkit-animation: flowing 60s infinite;
+    }
+
+    @-webkit-keyframes flowing
+    {
+        0%
+        {
+            background-color: black;
+        }
+        
+
+        10%
+        {
+            background-color: cornflowerblue;
+        }
+
+        20%
+        {
+            background-color: coral;
+        }   
+
+        30%
+        {
+            background-color: burlywood;
+        }
+        
+
+        40%
+        {
+            background-color: gray;
+        }
+
+        50%
+        {
+            background-color: black;
+        }
+
+        60%
+        {
+            background-color: burlywood;
+        }
+        
+
+        70%
+        {
+            background-color: cornflowerblue;
+        }
+        
+        80%
+        {
+            background-color: cadetblue;
+        }
+        
+        90%
+        {
+            background-color: coral;
+        }
+
+        100%
+        {
+            background-color: black;
+        }   
+    }

@@ -21,6 +21,16 @@ angular.module('starter.controllers', [])
   $scope.users=getAllUsers;
 
 
+  if ($scope.users.length==0) 
+  {
+  	$scope.savedText="List of Saved Users will appear here<br>Tap to Quick Login<br>Hold to Delete";
+  }
+  else
+  {
+  	$scope.savedText="Saved Users";
+  }
+
+
   $scope.login = function(uid, pass) 
   {
 
@@ -41,6 +51,9 @@ angular.module('starter.controllers', [])
                  
 
                   $scope.wait=flase;
+                  $scope.activeIcon="img/ActiveUser.png";
+                  $scope.activeUserText="Logged in as : "+uid;
+                  window.localStorage.setItem("loggedinUser", uid);
                   
 
                  });
@@ -88,9 +101,7 @@ angular.module('starter.controllers', [])
                         getAllUsers.push(submittedInfo);
                       }
                       $scope.users=getAllUsers;
-                      $scope.activeIcon="img/ActiveUser.png";
-                      $scope.activeUserText="Logged in as : "+uid;
-                      window.localStorage.setItem("loggedinUser", uid);
+                     
 
 
 

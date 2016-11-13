@@ -21,9 +21,9 @@ angular.module('starter.controllers', [])
   $scope.users=getAllUsers;
 
 
-  if ($scope.users.length==0) 
+  if ($scope.users==null) 
   {
-  	$scope.savedText="List of Saved Users will appear here<br>Tap to Quick Login<br>Hold to Delete";
+  	$scope.savedText="List of Saved Users will appear here<br><br>Tap to Quick Login<br>Hold to Delete<br><br>Tap the power button to Logout";
   }
   else
   {

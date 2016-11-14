@@ -1,6 +1,6 @@
 {
   "name": "PU WiFi",
-  "app_id": "",
+  "app_id": "8d28d92e",
   "proxies": [
     {
       "path": "/cgi-bin/login",

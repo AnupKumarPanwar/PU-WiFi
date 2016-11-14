@@ -1,9 +1,65 @@
-<ion-view view-title="Account">
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script> -->
+
+<ion-view view-title="Submit a Notice">
   <ion-content>
-    <ion-list>
+    <!-- <ion-list>
     <ion-toggle  ng-model="settings.enableFriends">
         Enable Friends
     </ion-toggle>
-    </ion-list>
+    </ion-list> -->
+    <center>
+    <form action="http://innov.hol.es/addNotice.php" method="POST" style="width: 100%; height: 520px">
+    	<textarea type="text" name="name" placeholder="Title" style="width: 95%; height: 80px"></textarea>
+    	<br>
+    	<textarea type="text" name="lastText" placeholder="Description" style="width: 95%; height: 300px"></textarea>
+    	<br>
+    	<input type="submit" name="submit" style="
+    width: 100%;
+    height: 40px;
+    background: #387ef5;
+    color: white;
+">
+    </form>
+
+
+
+
+
+
+
+    <!-- Square card -->
+   <!--  <style>
+    .demo-card-square.mdl-card {
+      width: 320px;
+      height: 32px;
+    }
+    .demo-card-square > .mdl-card__title {
+      color: #fff;
+      background:
+         bottom right 15% no-repeat #46B6AC;
+    }
+    </style>
+    <form action="http://innov.hol.es/addNotice.php" method="POST">
+    <div class="demo-card-square mdl-card mdl-shadow--2dp" style="height: 520px">
+      <div class="mdl-card__supporting-text">
+                <textarea type="text" name="name" placeholder="Title" style="width: 100%; height: 100px"></textarea>
+      </div>
+      <div class="mdl-card__supporting-text">
+                <textarea type="text" name="lastText" placeholder="Description" style="width: 100%; height: 400px "></textarea>
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                <input type="submit" name="submit">
+        </a>
+      </div>
+    </div>
+    </form> -->
+
+
+
+
+    </center>
   </ion-content>
 </ion-view>
